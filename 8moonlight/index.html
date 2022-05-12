@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="img/bg.jpg" alt="bg" id="bg">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountain.png" alt="mountain" id="mountain">
+        <img src="img/road.png" alt="road" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <section class="content">
+        <h3>parallax Background Scrolling</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni harum magnam, et, possimus placeat nobis enim
+            minima, rem atque est praesentium in totam libero! Eveniet in inventore possimus atque consectetur.
+            Vero suscipit facilis eum eaque, soluta eius iste, veritatis possimus culpa, harum inventore fuga quis.
+            Error, recusandae fugit similique corrupti harum iste itaque minus temporibus corporis molestiae laboriosam
+            eum earum.
+            Quidem odio asperiores nihil laudantium vitae voluptas ea temporibus cum laboriosam optio, accusamus
+            blanditiis similique, nisi sit expedita veritatis ullam, quos saepe sequi qui itaque eius libero sint
+            fugiat. Eligendi!
+            Aut dolorem adipisci ullam asperiores pariatur vitae saepe quisquam debitis reiciendis impedit, culpa
+            aliquid harum aperiam at fugit beatae sunt cupiditate, a architecto itaque maiores, obcaecati praesentium
+            ducimus labore? At.
+            Modi et optio unde obcaecati aperiam quod esse? Eos est ducimus dicta excepturi porro sed nesciunt sit
+            expedita maxime consectetur ipsa, iusto nostrum quisquam totam recusandae distinctio laborum eligendi
+            assumenda!</h4>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        var $window = $(window);
+        var bg = $('#bg');
+        var moon = $('#moon');
+        var mountain= $('#mountain');
+        var road = $('#road');
+        var text = $('#text');
+
+        //window.scroll();
+        //window의 scroll을 움직일때 마다 어떤일이 일어난다
+        $window.scroll(function(){
+            var value = $(this).scrollTop(); //$(this)는 window를 의미한다.
+            //console.log(value);
+
+            bg.css({top:value * 0.2 + "px"});
+            moon.css({left:-value * 0.5 + "px", top:value * 0.4 + "px", opacity : 1 - (value * 0.002)});
+            mountain.css({top:-value * 0.15 + "px"});
+            road.css({top:value * 0.15 + "px"});
+            text.css({top:value + "px"});
+        });
+    </script>
+</body>
+
+</html>
