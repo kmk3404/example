@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: url(img/bg-main.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Koulen', cursive;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header nav ul li {}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: 400;
+}
+
+header .search i {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+
+
+.slick .slick-slide {
+    position: relative;
+}
+
+.slick .slick-slide .left {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.slick .slick-slide .left img {
+    padding-top: 10%;
+    transform: translate(-200%, 0);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.slick .slick-slide.slick-active .left img {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .slick-slide .left .jordon {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    z-index: -1;
+    text-align: right;
+    transform: translate(100%, 0);
+    transition: 1.5s;
+}
+
+.slick .slick-slide.slick-active .left .jordon {
+    transform: translate(0, 0);
+}
+
+.slick .slick-slide .left .jordon h2 {
+    font-size: 15vw;
+    font-weight: 800;
+    color: #fff;
+    line-height: 0.9;
+    text-align: left;
+}
+
+.slick .slick-slide .left .jordon span {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.slick .right {
+    float: right;
+    width: 40%;
+    box-sizing: border-box;
+    padding-top: 15%;
+    color: #fff;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick .right .right-top h3 {
+    display: inline-block;
+    transform: translate(0, -300%);
+    font-size: 50px;
+    margin-right: 20px;
+    transition: 1s;
+}
+
+.slick .slick-active .right .right-top h3 {
+    transform: translate(0, 0);
+}
+
+.slick .right .right-top span {
+    display: inline-block;
+    transform: translate(0, -1200%);
+    transition: 1s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+
+.slick .right .right-top .star i {
+    color: #ffde00;
+    margin-right: 6px;
+}
+
+.slick .slick-active .right .right-top span {
+    display: inline-block;
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .right .right-top .star i:last-child {
+    color: #fff;
+}
+
+.slick .right .right-top h4 {
+    font-size: 30px;
+    transform: translate(400%, 0);
+    transition: 1s;
+    opacity: 0;
+}
+
+.slick .slick-active .right .right-top h4 {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .right .right-m {
+    /* line-height은 기본값이 1~1.3 */
+    line-height: 2;
+}
+
+.slick .right .right-m p {
+    transform: translate(400%, 0);
+    transition: 1s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+
+.slick .slick-active .right .right-m p {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .right .right-m li {
+    list-style: circle;
+    transform: translate(400%, 0);
+    transition: 1s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+.slick .slick-active .right .right-m li {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .right .right-b {
+    padding-top: 20px;
+
+}
+
+.slick .right .right-b .size {
+    background: #ffde00;
+    border: none;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    padding: 2px;
+    transform: translate(-1500%, 0);
+    transition: 1s;
+    opacity: 0;
+}
+
+.slick .slick-active .right .right-b .size {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .right .right-b .cart {
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    transform: translate(0, 1000%);
+    transition: 1s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+
+.slick .slick-active .right .right-b .cart {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.slick .right .right-b span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    transform: translate(800%, 0);
+    transition: 1s;
+    transition-delay: 0.4s;
+    opacity: 0;
+}
+
+.slick .slick-active .right .right-b span {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+
+
+/* display:none <-> display:block : 영역이 사라짐 / 애니메이션이 안됨
+visibility: hidden; <-> visibility: visible; : 영역유지 / 애니메이션이 안됨
+opacity:0 <-> opacity:1 : 영역유지 / 애니메이션 적용됨 */
+
+.slick .slick-prev {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    visibility: hidden;
+}
+
+.slick .slick-prev::after {
+    content: '\f053';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 60px;
+    color: #fff;
+    /* text-shadow:칼라 x축 y축 blur; */
+    text-shadow: #000 0px 0px 6px;
+    cursor: pointer;
+}
+
+.slick .slick-next {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    visibility: hidden;
+}
+
+.slick .slick-next:after {
+    content: '\f054';
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: #000 0px 0px 6px;
+    cursor: pointer;
+}
