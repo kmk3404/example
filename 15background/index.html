@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top" style="height: 100vh;"></div>
+    <div class="newspaper">
+        <div class="container">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div><!-- text -->
+            <div class="wrap">
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s1.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s1.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s2.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s2.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s3.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s3.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s4.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s4.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s5.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s5.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s6.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s6.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s7.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s7.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+                <div class="hb">
+                    <div class="cont">
+                        <img src="img/f_s8.jpg" alt="이미지">
+                    </div>
+                </div><!-- hb -->
+                <div class="fullbg">
+                    <img src="img/f_s8.jpg" alt="배경이미지">
+                </div><!-- fullbg -->
+            </div><!-- wrap -->
+        </div>
+    </div>
+    <div class="bottom" style="height: 100vh;"></div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        var docwidth = $('body').width(),
+            $wrap = $('.wrap'),
+            $imgs = $('.wrap .hb'),
+            slideWidth = $wrap.width();
+
+            $wrap.mousemove(function(e){
+                var mousX = e.pageX;
+                //console.log(mousX);
+                var offset = mousX/docwidth * slideWidth - mousX/2;
+
+                $imgs.css({
+                    transform:'translateX(' + -offset + 'px)'})
+                })
+
+            $wrap.mouseleave(function(){
+                $imgs.css({
+                    transform:'translateX(' + 0 + 'px)',
+                    transition: 0.5 + 's'
+            }) 
+
+            })
+    </script>
+</body>
+</html>
