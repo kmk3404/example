@@ -1,0 +1,82 @@
+*{margin: 0; padding: 0;}
+.text{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: #555;
+    z-index: 9999;
+}
+.fixed-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.one{
+    background: skyblue;
+}
+.two{
+    background: palegoldenrod;
+}
+.three{
+    background: violet;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    border-radius: 50%;
+
+}
+.race{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.race.r1{
+    background: blue;
+}
+.race.r2{
+    background: green;
+    left: 35%;
+    top: 20%
+}
+.race.r3{
+    background: pink;
+    left: 15%;
+    top: 70%;
+}
+.seven{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: silver;
+}
+.eight{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: beige;
+}
