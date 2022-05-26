@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.text{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    z-index: 9999;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.slide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    color: #fff;
+    
+}
+.slide_content{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+.slide04{
+    background: url(img/stars.gif);
+    background-size: cover;
+}
