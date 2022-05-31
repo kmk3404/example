@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+a{text-decoration: none; color: #222;}
+
+body{background: #e9d5ca;}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sec3 .res{
+    position: relative;
+    width: 700px;
+    height: 600px;
+}
+.sec3 .res .site_bg{
+    width: 100%; height: 100%;
+    background: url(img/portfolio-huespa-1000x1000-comp.png)no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.sec3 .res>div:not(.button){
+    /* 제외선택자
+    선택자 : not(제외내용){} */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background: red;
+}
+
+.sec3 .res>div.top_site_1{
+    width: 385px;
+    height: 245px;
+    top: 181px;
+    left: 105px;
+    background: url(img/wfull.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 1s;
+}
+.sec3 .res>div.top_site_1:hover{
+    background-position: bottom;
+}
+.sec3 .res>div.top_site_2{
+    width: 256px;
+    height: 195px;
+    top: 324px;
+    left: 395px;
+    background: url(img/w960.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 1s;
+}
+.sec3 .res>div.top_site_2:hover{
+    background-position: bottom;
+}
+.sec3 .res>div.top_site_3{
+    width: 83px;
+    height: 115px;
+    left: 252px;
+    top: 437px;
+    background: url(img/w320.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 1s;
+}
+.sec3 .res>div.top_site_3:hover{
+    background-position: bottom;
+}
+
+.sec3 .button{
+    position: absolute;
+    right: -140px;
+    top: 339px;
+}
+.sec3 .button>div{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.sec3 .button>div a{
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+.sec3 .button>div:hover{
+    background: #fad4d4
+}
