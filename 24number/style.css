@@ -1,0 +1,22 @@
+ 
+ .progress-bar{
+     position: relative;
+     width: 960px;
+     height: 30px;
+     margin: 30em auto; /* 30*16px = 480px */
+     /* em의 기준은 font-size값을 기준으로 한다.
+     rem의 기준은 body가 가진 font-size값을 기준으로 한다. */
+     border: 1px solid #0011dd;
+ }
+ .progress-bar .bar{
+     position: absolute;
+     top: 0; bottom: 0;
+     left: 0; width: 0;
+     background: #d4a
+ }
+ .progress-bar .rate{
+     position: absolute;
+     right: 15px;
+      top: 0; bottom: 0;
+      font-size: 20px;
+ }
